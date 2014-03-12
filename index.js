@@ -1,1 +1,3 @@
-module.exports = require('./lib');
+var utils = module.exports = require('./lib');
+
+console.log(utils('test'));
