@@ -1,6 +1,6 @@
 {
   "name": "npmcm",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "NPM Configuration Manager",
   "main": "index.js",
   "author": "Arthur Weber <arthur.weber@viacesi.fr>",
