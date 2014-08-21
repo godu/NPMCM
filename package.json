@@ -4,5 +4,13 @@
   "description": "NPM Configuration Manager",
   "main": "index.js",
   "author": "Arthur Weber <arthur.weber@viacesi.fr>",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "test": "env=env node test.js"
+  },
+  "config": {
+    "package": "package",
+    "npmrc": "package",
+    "env": "package"
+  }
 }
