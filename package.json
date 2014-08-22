@@ -6,11 +6,13 @@
   "author": "Arthur Weber <arthur.weber@viacesi.fr>",
   "license": "ISC",
   "scripts": {
-    "test": "env=env node test.js"
+    "test": "./test.sh",
+    "_test": "node test.js"
   },
   "config": {
     "package": "package",
     "npmrc": "package",
+    "cli": "package",
     "env": "package"
   }
 }

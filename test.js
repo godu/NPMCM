@@ -1,10 +1,10 @@
+'use strict';
+
 var NPMCM = require('./');
 
-if(NPMCM('package') !== 'package')
-  throw new Error('package');
-if(NPMCM('npmrcpackage') !== 'npmrcpackage')
-  throw new Error('npmrc');
-if(NPMCM('npmrc') !== 'npmrc')
-  throw new Error('npmrc');
-if(NPMCM('env') !== 'env')
-  throw new Error('env');
+['package', 'npmrcpackage', 'cli', 'npmrc', 'env'].forEach(function(key){
+	var value = NPMCM(key);
+
+	if(key !== value)
+		throw new Error(key + ' : ' + value);
+});
