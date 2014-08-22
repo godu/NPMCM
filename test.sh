@@ -1,0 +1,1 @@
+env=env npm run _test --cli=cli --env=cli

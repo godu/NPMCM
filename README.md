@@ -3,33 +3,44 @@
 
 ## Usage
 
-```javascript
+```JavaScript
 var NPMCM = require('NPMCM');
 
 NPMCM('port'); // '8000'
 ```
 
-## Sources
+## Sources & priority
 
-- `./package.json`
-```json
-...
-config: {
-    port: 8000
-},
-...
-```
+1. Environment variables
 
-- Environment variables
-```shell
+```Shell
 export port=8000
 ```
 
-- NPM Environnement variables
-```shell
-npm config set port 8000
-npm config set port 8000 --global
+2. `.npmrc` --global
 
-npm config set <application-name>:port 8000
-npm config set <application-name>:port 8000 --global
+```INI
+port=8000
+```
+
+3. CLI
+
+```Shell
+npm start --port=8000
+```
+
+4. `.npmrc`
+
+```INI
+<package-name>:port=8000
+```
+
+5. `package.json`
+
+```JSON
+{
+	config: {
+		port: 8000
+	}
+}
 ```
