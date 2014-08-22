@@ -7,12 +7,14 @@
   "license": "ISC",
   "scripts": {
     "test": "./test.sh",
-    "_test": "node test.js"
+    "_test": "node test.js",
+    "start": "node"
   },
   "config": {
     "package": "package",
     "npmrc": "package",
     "cli": "package",
-    "env": "package"
+    "env": "package",
+    "array": ["foo", "bar"]
   }
 }
